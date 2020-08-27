@@ -1,4 +1,4 @@
-# C/C++ Program
+# C/C++ Programs
 
 ## prime23.cpp
 
