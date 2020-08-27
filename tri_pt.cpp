@@ -22,9 +22,9 @@ int main()
 	
 	for (int r=0; r<num_rows; r++) { 
 	
-		// floor squashes down to nearest int, draw picture with r on y-axis/theta in top-left
+		// floor squashes down to nearest int
+		// it helped to draw a picture with r on y-axis/theta in top-left
 		for(int c=0; c <= floor( r * tan(rads) ); c++) { 
-
 			cout << "*";	
 		}
 		cout << endl;
