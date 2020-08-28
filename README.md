@@ -12,11 +12,11 @@ Run with:
 ./prime23
 ```
 
-## tri.cpp
+## tri_pt.cpp
 
 Compile with: 
 ```shell
-g++ -o tri tri.cpp
+g++ -o tri tri_pt.cpp
 ```
 
 Run with: 
