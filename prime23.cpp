@@ -24,7 +24,7 @@ int main()
         {
             if (i==3)
             {
-				threes++;
+			threes++;
 			}
 			if (i>3)
 			{
