@@ -25,6 +25,8 @@
 #include <iostream>
 using namespace std;
 
+int getDivisorSum(int n);
+
 int main()
 {
   // n1 is the number with the highest abundance, a1
@@ -41,11 +43,53 @@ int main()
   cout << "and ending with 0."<< endl;
 
   /* Your code here */
+    
+  int value;
+  int divisorSum;
+  bool foundZero = false;
+
   
-  
-  
-  
-  
+  while (foundZero == false) {
+    cin >> value;
+    if (value == 0) {
+        foundZero = 0;  
+        break;    
+    } else {
+        
+        divisorSum = getDivisorSum(value);
+        
+        if (divisorSum > value) {
+            
+            if (divisorSum > a1) {
+                
+                a2 = a1;
+                n2 = n1;
+                
+                a1 = divisorSum;
+                n1 = value;
+                    
+            }   
+            else if (divisorSum > a2) {
+            
+                a3 = a2;
+                n3 = n2;
+                
+                a2 = divisorSum;
+                n2 = value;
+                
+            }  
+            else if (divisorSum > a3) {
+                                
+                a3 = divisorSum;
+                n3 = value;
+                
+            }
+            
+        }
+    }
+    
+  }
+ 
     
   /* End of your code */
 
@@ -58,4 +102,17 @@ int main()
 
   return 0;
 
+}
+
+int getDivisorSum(int n) {
+    
+    int divisorSum = 0;
+
+    for (int i=1; i<n; i++) { // i is factor
+        if (n%i == 0) {
+            divisorSum += i;
+        }
+    }
+
+    return divisorSum;
 }
