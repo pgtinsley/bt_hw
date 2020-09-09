@@ -60,6 +60,8 @@ int main()
         
         if (divisorSum > value) {
             
+            num_abundant++;
+            
             if (divisorSum > a1) {
                 
                 a2 = a1;
